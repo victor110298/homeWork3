@@ -60,8 +60,8 @@ public class CarDoor{
         this.closeDoor = windowIsOpened;
     }
     public void printCarDoorState() {
-        System.out.println("The door now is " + (isDoorClosed() ? "opened" : "closed")
-                + " and window now is " + (isWindowClosed() ? "opened" : "closed"));
+        System.out.println("The door now is " + (isDoorClosed() ? "closed" : "open")
+                + " and window now is " + (isWindowClosed() ? "closed" : "open"));
     }
 
 }
