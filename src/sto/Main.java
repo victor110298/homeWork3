@@ -18,7 +18,7 @@ public class Main {
         carWheel.damageWheel(0.1);
         carWheel.printWheelCondition();
 
-        Car car = new Car("1998","V8",200,2,5,4,90);
+        Car car = new Car("01.03.2019","V8",200,2,5,4,90);
         car.setCurrentSpeed(80);
         car.addPassenger();
         car.removePassenger();

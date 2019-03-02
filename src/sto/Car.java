@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
-    private final String dateOfConstruction;
+    private final String LocalDate;
     private final String engineType;
     private int maxSpeed;
     private int accelerateToHundred;
@@ -14,8 +14,8 @@ public class Car {
     private List<CarWheel> wheels = new ArrayList<>();
     private List<CarDoor> doors = new ArrayList<>();
 
-    public Car(String dateOfConstruction, String engineType) {
-        this.dateOfConstruction = dateOfConstruction;
+    public Car(String LocalDate, String engineType) {
+        this.LocalDate = LocalDate;
         this.engineType = engineType;
     }
 
@@ -89,7 +89,7 @@ public class Car {
 
     public void printCarInfo() {
         System.out.println("Car Information");
-        System.out.println("Date of construction : " + dateOfConstruction);
+        System.out.println("Date of construction : " + LocalDate);
         System.out.println("Type of engine : " + engineType);
         System.out.println("Maximum speed : " + maxSpeed);
         System.out.println("Time to get 100km/h : " + accelerateToHundred);
