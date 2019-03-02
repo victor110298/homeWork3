@@ -54,11 +54,21 @@ public class Car {
     }
 
     public CarDoor getCarDoor(int index) {
-        return doors.get(index);
+        if (index < 0 || index < 3) {
+            System.out.println("Can not get a door from this index.");
+            return doors.get(0);
+        } else {
+            return doors.get(index);
+        }
     }
 
     public CarWheel getCarWheel(int index) {
-        return wheels.get(index);
+        if (index < 0 || index > 4) {
+            System.out.println("Can not get a wheel from this index");
+            return wheels.get(0);
+        } else {
+            return wheels.get(index);
+        }
     }
 
     public void removeAllWheels() {
@@ -68,8 +78,13 @@ public class Car {
     }
 
     public void setWheels(int amount) {
-        for (int i = 0; i < amount; i++) {
-            wheels.add(new CarWheel(1));
+        if (amount<0 || amount>4){
+            System.out.println("Dont correct amount of wheels");
+        }
+        else {
+            for (int i = 0; i < amount; i++) {
+                wheels.add(new CarWheel(1));
+            }
         }
     }
 

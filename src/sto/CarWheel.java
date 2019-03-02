@@ -4,7 +4,7 @@ public class CarWheel {
     private double stateOfWheel;
 
     public CarWheel() {
-        stateOfWheel = 1.0;
+        this.stateOfWheel = 1.0;
     }
 
     public CarWheel(double stateOfWheel) {
